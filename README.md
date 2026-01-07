@@ -32,7 +32,7 @@ The KWS pipeline consists of two ONNX modules:
 - CrossEntropy loss function
 
 ## Performance
-
+The model was trained and tested on the MSC dataset.
 | Metric | Value |
 |--------|-------|
 | Accuracy | 99.5% |
