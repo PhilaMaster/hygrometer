@@ -28,9 +28,8 @@ class SmartHygrometer:
         print('Redis Connected:', self.redis_client.ping())
 
         #custom model loading
-        MODEL_NAME = 'mobilenet_96'
-        frontend_file = f'model/{MODEL_NAME}_frontend.onnx'
-        model_file = f'model/{MODEL_NAME}_model_INT8.onnx'
+        frontend_file = f'Model_frontend.onnx'
+        model_file = f'Quantized_model.onnx'
 
         sess_opt = ort.SessionOptions()
         sess_opt.intra_op_num_threads = 1
