@@ -20,7 +20,7 @@ from time import time
 from torch import nn
 
 print(f'PyTorch version: {torch.__version__}')
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') # <--- AGGIUNTO QUESTO
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f'CUDA available: {torch.cuda.is_available()}')
 
 torch.manual_seed(0)
@@ -108,4 +108,5 @@ torch.onnx.export(
     input_names=['input'],
     dynamo=False,
     opset_version=17,
+
 )
